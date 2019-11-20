@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="calc.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+        <title>calculator</title>
+        
+    </head>
+    <body>
+        <div class="container">
+            <div id="hd" >
+            <span ><h2>Calculator</h2></span></div>
+               <div class="scr">
+                   <div class='oper'>
+                 <textarea rows="3" name="opr" id="equ" disabled></textarea>
+                  </div>
+                  <div class=ans>
+                  <textarea rows="2" name="ans" id="answer" placeholder="0" disabled></textarea>
+                  </div>
+              </div>
+             <table>
+                 <tr>
+                     <td>
+                        <div >
+                            <button class="exp" onClick="num.eraseAll()">C</button>
+                        </div>
+                     </td>
+                     <td>
+                        <div>
+                            <button class="exp" onClick="num.erase()">XX</button>
+                        </div>
+                     </td>
+                     <td>
+                        <div>
+                            <button class="exp" onClick="num.add('%')">%</button>
+                        </div>
+                     </td>
+                     <td>
+                        <div >
+                            <button class="exp" onClick="num.add('/')">/</button>
+                        </div>
+                     </td>
+                  </tr>
+                  
+                  <tr>
+                      <td>
+                        <div>
+                        <button onClick="num.disp('7')">7</button>
+                        </div>
+                     </td>
+                     <td>
+                        <div>
+                        <button onClick="num.disp('8')">8</button>
+                        </div>
+                     </td>
+                     <td>
+                        <div>
+                        <button onClick="num.disp('9')">9</button>
+                        </div>
+                     </td>
+                     <td>
+                        <div >
+                        <button class="exp" onClick="num.add('*')">x</button>
+                        </div>
+                     </td>
+                </tr>
+                
+                <tr>
+                     <td>
+                        <div>
+                        <button onClick="num.disp('4')">4</button>
+                        </div>
+                    </td><td>
+                        <div>
+                        <button onClick="num.disp('5')">5</button>
+                        </div>
+                    </td><td>    
+                        <div>
+                        <button onClick="num.disp('6')">6</button>
+                        </div>
+                     </td>
+                     <td>
+                        <div>
+                            <button class="exp" onClick="num.add('-')">-</button>
+                        </div>
+                     </td>
+                </tr>
+                
+                <tr>
+                     <td>
+                        <div>
+                        <button onClick="num.disp('1')">1</button>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                        <button onClick="num.disp('2')">2</button>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                        <button onClick="num.disp('3')">3</button>
+                        </div>
+                    </td>
+                   <td>
+                        <div>
+                        <button class="exp" onClick="num.add('+')">+</button>
+                        </div>
+                     </td>
+                </tr>
+                
+                <tr><td></td>
+                     <td>     
+                        <div>
+                        <button onClick="num.zero()">0</button>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <button onClick="num.dec()">.</button>
+                        </div>
+                    </td>
+                   <td>
+                        <div>
+                            <button class="exp" onClick="num.final()">=</button>
+                        </div>
+                     </td>
+                </tr>
+            </table>
+            </div>
+        <script src="calc.js"> </script>
+           
+    </body>
+</html>
